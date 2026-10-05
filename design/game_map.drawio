@@ -1,0 +1,23 @@
+<mxfile host="app.diagrams.net">
+<diagram name="Haunted Museum Map">
+<mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1100" pageHeight="850">
+<root>
+<mxCell id="0"/><mxCell id="1" parent="0"/>
+<mxCell id="lobby" value="START&#xa;Lobby&#xa;No Item" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="400" y="300" width="150" height="80" as="geometry"/></mxCell>
+<mxCell id="gallery" value="Gallery&#xa;Brass Key" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="400" y="170" width="150" height="80" as="geometry"/></mxCell>
+<mxCell id="archives" value="Archives&#xa;Old Museum Map" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="180" y="170" width="150" height="80" as="geometry"/></mxCell>
+<mxCell id="security" value="Security Room&#xa;Flashlight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="620" y="170" width="150" height="80" as="geometry"/></mxCell>
+<mxCell id="workshop" value="Workshop&#xa;Crowbar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="180" y="430" width="150" height="80" as="geometry"/></mxCell>
+<mxCell id="basement" value="Basement&#xa;Spare Battery" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="180" y="560" width="150" height="80" as="geometry"/></mxCell>
+<mxCell id="theater" value="Theater&#xa;Master Exit Ticket" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="620" y="430" width="150" height="80" as="geometry"/></mxCell>
+<mxCell id="curator" value="VILLAIN&#xa;Curator's Office&#xa;The Curator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="840" y="170" width="170" height="80" as="geometry"/></mxCell>
+<mxCell id="e1" value="north / south" edge="1" parent="1" source="lobby" target="gallery"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e2" value="west / east" edge="1" parent="1" source="gallery" target="archives"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e3" value="east / west" edge="1" parent="1" source="gallery" target="security"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e4" value="west / east" edge="1" parent="1" source="lobby" target="workshop"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e5" value="north / south" edge="1" parent="1" source="workshop" target="basement"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e6" value="east / west" edge="1" parent="1" source="lobby" target="theater"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e7" value="east / west" edge="1" parent="1" source="security" target="curator"><mxGeometry relative="1" as="geometry"/></mxCell>
+</root></mxGraphModel>
+</diagram>
+</mxfile>

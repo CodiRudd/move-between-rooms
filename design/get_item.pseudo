@@ -1,0 +1,20 @@
+# Project One Get-Item Pseudocode
+
+SET inventory TO an empty list
+
+WHILE the game has not ended
+    OUTPUT "Enter the name of the item you want to get."
+    INPUT requested_item
+
+    IF current_room contains requested_item
+        ADD requested_item TO inventory
+        REMOVE requested_item FROM current_room
+        OUTPUT requested_item + " was added to your inventory."
+
+        IF inventory contains all six required items
+            OUTPUT "You collected all six items!"
+        END IF
+    ELSE
+        OUTPUT "That item is not in this room. Try again."
+    END IF
+END WHILE

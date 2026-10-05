@@ -1,0 +1,34 @@
+# Project One Move-Between-Rooms Pseudocode
+
+SET current_room TO "Lobby"
+
+WHILE the game has not ended
+    OUTPUT "Enter a direction: north, south, east, or west."
+    INPUT movement_command
+
+    IF movement_command is "north" AND north is a valid direction from current_room
+        SET current_room TO the room north of current_room
+        OUTPUT "You moved north into " + current_room
+    ELSE IF movement_command is "south" AND south is a valid direction from current_room
+        SET current_room TO the room south of current_room
+        OUTPUT "You moved south into " + current_room
+    ELSE IF movement_command is "east" AND east is a valid direction from current_room
+        SET current_room TO the room east of current_room
+        OUTPUT "You moved east into " + current_room
+    ELSE IF movement_command is "west" AND west is a valid direction from current_room
+        SET current_room TO the room west of current_room
+        OUTPUT "You moved west into " + current_room
+    ELSE
+        OUTPUT "You cannot go that direction from this room. Try again."
+    END IF
+
+    IF current_room is "Curator's Office"
+        IF all six items have been collected
+            OUTPUT "You collected everything and escaped the museum!"
+            END GAME WITH WIN
+        ELSE
+            OUTPUT "The Curator caught you! You lose."
+            END GAME WITH LOSS
+        END IF
+    END IF
+END WHILE
